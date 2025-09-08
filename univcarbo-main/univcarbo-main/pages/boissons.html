@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title>Univ'Carbo</title>
+    <link rel="icon" type="image/jpeg" href="../images/logo1.png">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/transport.css">
+    <script src="../javascript/boisson.js"defer></scriptsrc></script>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/logo1.png" alt="Logo de Univ'Carbo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li>
+                    <a href="#">Thématiques</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Transport.html">Transport🚊</a></li>
+                        <li><a href="UsageduNumerique.html">Usages du numérique💻</a></li>
+                        <li><a href="repas.html">Repas🍽️</a></li>
+                        <li><a href="#">Boisson🥤</a></li>
+                    </ul>
+                </li>
+                <li><a href="comparateur.html">Comparateur</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article >
+        <h1>Impact de votre consommation</h1>
+        <form id="formulaire2">
+            <label for="boisson-type">Choisissez une boisson :</label>
+            <select id="boisson-type" name="boisson-type">
+                <!-- Les options seront chargées ici par JavaScript -->
+            </select>
+            <label for="quantite">Quantité consommée par jour (en litres):</label>
+            <input type="number" id="quantite" name="quantite" min="0" step="0.1">
+            <button type="submit">Calculer l'Impact</button>
+        </form>
+        <p id="resultat_boisson" class="resultat"></p>
+    </article>
+
+    <footer>
+        <a href="contact.html">À propos - contact</a>
+        <p>&copy; 2023-2024-Université Toulouse-Jean Jaurès - Projet Informatique-SHS</p>
+    </footer>
+</body>
+</html>

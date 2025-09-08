@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univ'carbo</title>
+    <link rel="icon" type="image/jpeg" href="../images/logo1.png">
+    <link rel="stylesheet" type="text/css" href="../styles/UsageduNumerique.css">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/logo1.png" alt="Logo de Univ'Carbo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li>
+                    <a href="#">Thématiques</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Transport.html">Transport🚊</a></li>
+                        <li><a href="#">Usage numérique💻</a></li>
+                        <li><a href="repas.html">Repas🍽️</a></li>
+                        <li><a href="boissons.html">Boisson🥤</a></li>
+                    </ul>
+                </li>
+                <li><a href="comparateur.html">Comparateur</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+    <h1>Impact de vos usages numériques</h1>
+    </section>
+    <label> Sélectionnez vos usages du numérique durant une semaine :</label>
+    <p class="phr">Cliquez sur les boutons correspondants aux usages numériques que vous pratiquez, entrez le nombre d'utilisations hebdomadaires, et choisissez vos appareils utilisés!</p>
+
+    <div id="Container"></div>
+    <div class ="btn">
+    <button onclick="calculerEmpreinteCarbone()">Calculer l'empreinte carbone</button>
+    </div>
+    <div id="resultat"></div>
+    <p class="phrase">La valeur calculée est basée uniquement sur l'utilisation de vos usages du numérique en fonction du temps d'utilisation pendant une semaine. L'impact de la fabrication de vos appareils n'est pas pris en compte dans le calcul, mais il est affiché ci-dessous.</p>
+    <ul id="result"></ul>
+    <footer>
+        <a href="contact.html">À propos - contact</a>
+        <p>&copy; 2023-2024-Université Toulouse-Jean Jaurès - Projet Informatique-SHS</p>
+    </footer>
+    
+    <script src="../javascript/UsageduNumerique.js"></script>
+</body>
+</html>

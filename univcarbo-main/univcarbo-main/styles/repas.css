@@ -1,0 +1,135 @@
+/* Styles généraux */
+body {
+    font-family: 'Apple Chancery', cursive;
+}
+
+.bouton {
+    align-items: center;
+    padding: 20px;
+}
+
+button {
+    padding: 20px 40px;
+    font-family: 'Apple Chancery', cursive;
+    font-size: large;
+    background-color: #4A5185;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 100px;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #3C4473;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+    background-color: #2E355E;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    margin: 10px;
+    width: 80px;
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'Apple Chancery', cursive;
+    text-align: center;
+    border: 2px solid rgb(74, 81, 133);
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+#repasForm div {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#repasForm {
+    width: 50%;
+    text-align: left;
+    margin-left: 10%; /* Ajuster la marge pour centrer le contenu */
+}
+
+label {
+    font-family: 'Apple Chancery', cursive;
+    color: rgb(34, 139, 34);
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+#mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 5%; /* Ajuster la marge pour centrer le contenu */
+    margin-right: 5%; /* Ajuster la marge pour centrer le contenu */
+}
+
+#resultat {
+    width: 1000px;
+    height: 430px;
+    background-color: rgb(109, 212, 109);
+    border: 1px solid rgb(109, 212, 109);
+    border-radius: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Apple Chancery', cursive;
+    text-align: center;
+    font-weight: bold;
+    color: aliceblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+@media (max-width: 1400px) {
+    #resultat {
+        width: auto;
+        height: auto;
+        margin-top: 10px;
+        display: none;
+    }
+
+    #mainContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mainContainer .btn {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+section {
+    text-align: center;
+    padding: 40px 0;
+    position: relative;
+}
+
+.phr {
+    margin: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+}
+
+#result {
+    font-family: 'Apple Chancery', cursive;
+    text-align: center;
+    font-weight: bold;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title>Univ'Carbo</title>
+    <link rel="icon" type="image/jpeg" href="../images/logo1.png">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/transport.css">
+    <script src="../javascript/Transport.js"defer></scriptsrc></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="../images/logo1.png" alt="Logo de Univ'Carbo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li>
+                    <a href="#">Thématiques</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Transport🚊</a></li>
+                        <li><a href="UsageduNumerique.html">Usages du numérique💻</a></li>
+                        <li><a href="repas.html">Repas🍽️</a></li>
+                        <li><a href="boissons.html">Boisson🥤</a></li>
+                    </ul>
+                </li>
+                <li><a href="comparateur.html">Comparateur</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article id="transports">
+        <h1>Impact de vos trajets habituels</h1>
+        <form id="formulaire2">
+            <label for="transport-type">Sélectionnez le mode de transport:</label>
+            <select id="transport-type" name="transport-type">
+                <!-- Les options seront chargées ici par JavaScript -->
+            </select>
+
+            <label for="distance">Distance parcourue (en km):</label>
+            <input type="number" id="distance" name="distance" min="0">
+
+            <button type="submit">Calculer l'Impact</button>
+        </form>
+        <p id="resultat_transpo"></p>
+    </article>
+
+    <footer>
+        <a href="contact.html">À propos - contact</a>
+        <p>&copy; 2023-2024-Université Toulouse-Jean Jaurès - Projet Informatique-SHS</p>
+    </footer>
+</body>
+</html>
