@@ -1,0 +1,213 @@
+h1{
+    text-align: center;
+    padding: 60px;
+    font-family: cursive; 
+    margin: auto;   
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+main {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;;
+    padding: 6% 15% 30% 15%;
+    
+}
+
+.bouton {
+    padding: 10px; 
+    margin: 20px;        
+    background-color:#7761FD; 
+    color: white;          
+    border: none;          
+    border-radius: 4px;    
+    cursor: pointer;       
+    font-size: 16px; 
+         
+}
+
+.bouton a {
+    text-decoration: none;
+    color: white;
+         
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+    padding-bottom: 5px;
+}
+
+.ajout_elt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bouton_ajout_elt {
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    border-radius: 50%;   
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+    width: 30px;          
+    height: 30px;
+    display: flex;      
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;           
+}
+
+.ajout_elt label {
+    font-size: 18px;
+}
+
+.titre, .element{
+    width: 100%; 
+    padding: 12px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.Elt_Liste {   
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.btn_supprimer {
+    background: transparent; 
+    border: none; 
+    cursor: pointer; 
+    margin: 10px; 
+    padding: 0; 
+    align-items: center;
+}
+
+.btn_supprimer img {
+    width: 20px; 
+    height: 20px; 
+}
+
+#suggestion {
+    position: static; 
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 4px;
+    margin-bottom: 10px; 
+}
+
+.suggestion-item {
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 14px;
+    color: #333;
+}
+
+.suggestion-item:hover {
+    background-color: #8fb3df;
+}
+
+/* -webkit-scrollbar pour la barre de défilement  */
+#suggestion::-webkit-scrollbar {
+    width: 8px;
+}
+
+#suggestion::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+#suggestion::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 4px;
+}
+
+#suggestion::-webkit-scrollbar-thumb:hover {
+    background: #ccc;
+}
+
+/* pour cacher les suggestions par défaut */
+#suggestion:empty {
+    display: none;
+}
+
+.toggle{
+    display: flex;           
+    align-items: center;    
+    justify-content: center; 
+}
+
+.switch {
+	display: inline-block;
+	position: relative;
+	width: 70px;
+	height: 40px;
+	cursor: pointer;
+	overflow: hidden;
+    margin: 20px;
+}
+
+
+.switch input {
+	position: absolute;
+	top: -30px;
+	left: -30px;
+	width: 0;
+	height: 0;
+}
+
+.switch input + span {
+    position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: #7f77b0;
+   border-radius: 20px;
+}
+
+.switch input:checked + span {
+	background: #7761FD;
+}
+
+.switch input + span:before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 4px;
+	width: 32px;
+	height: 32px;
+	background: white;
+	border-radius: 50%;
+	transform: translateY(-50%);
+	transition: all .5s;
+}
+
+.switch input:checked + span:before {
+	left: 34px;
+}
+#list p {
+    font-size: 15px;
+    font-style: italic;
+}
+

@@ -1,0 +1,387 @@
+body {
+  background-color: #f2f2f2;
+  font-family: sans-serif;
+}
+
+main {
+  font-family: Arial, sans-serif;
+  padding: 20px 0;
+}
+
+.Info-User img {
+  border-radius: 50%;
+}
+
+#SectionPresentation {
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+#SectionPresentation button {
+  width: 45%;
+  border: none;
+  padding: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+
+.btnPublic {
+  background-color: black;
+  color: #fff;
+}
+
+#SectionPresentation .btnPP {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+#SectionPresentation h2 {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#PileListe {
+  display: flex;
+}
+.divListeAside {
+  width: 90%;
+  margin: auto;
+}
+
+.limitliste {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 2%;
+  border-radius: 5%;
+  padding: 10px;
+}
+
+.listeContenue {
+  width: 100%;
+}
+
+.liste {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Info-User {
+  display: flex;
+  align-items: center;
+  margin: 2% auto;
+}
+
+.Info-User a,
+.Info-User p,
+.Info-User button {
+  width: 20%;
+  margin: 0;
+  font-weight: bold;
+}
+.Info-User a {
+  text-decoration: none;
+  color: black;
+}
+
+.Info-User a img {
+  width: 90%;
+}
+
+.Info-User button {
+  margin-left: 30%;
+  /* background-color: #298700; */
+  background-color: #7761fd;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.liste-Detail {
+  margin: auto;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #000;
+}
+
+.liste-Detail h3 {
+  font-size: 18px;
+  text-align: center;
+  padding: 2% 0;
+  font-weight: bold;
+}
+
+.liste-Detail ul {
+  text-align: center;
+  list-style-type: none;
+}
+
+.liste-Detail ul li {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.liste-Detail ul li h6 {
+  flex: 1;
+  height: 50%;
+  margin: auto;
+}
+
+.Interraction li {
+  width: 25%;
+}
+
+.Interraction {
+  margin-bottom: 1%;
+}
+
+.Interraction ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.Commentaire form {
+  display: flex;
+}
+
+.Commentaire button {
+  color: #7761fd;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  flex: -1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.Commentaire input {
+  flex: 1;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btnview,
+.btnviewpub {
+  margin-left: 35%;
+  color: #7761fd;
+  border: none;
+  font-weight: bold;
+  background-color: #f5f5f5;
+}
+
+.divCommentaire ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.divCommentaire ul li {
+  display: flex;
+  align-items: center;
+}
+
+.divCommentaire ul li img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+.divCommentaire ul li p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.divCommentaire div {
+  display: flex;
+  width: 60%;
+  align-items: center;
+}
+
+.divCommentaire div a {
+  text-decoration: none;
+  color: black;
+  width: 15%;
+}
+
+.divCommentaire .Contenue {
+  text-align: center;
+}
+
+.divCommentaire h5 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+
+/*Style de la partie Menu de la page d'acceuil*/
+.Menu {
+  height: 100%;
+  border-right: 1px solid black;
+  padding-top: 10px;
+}
+
+.Menu ul {
+  list-style-type: none;
+}
+
+.Menu ul:first-child {
+  border-bottom: 1px solid black;
+}
+
+.Menu ul li {
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.Menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Style pour la partie aside de sugestion*/
+aside {
+  height: 100%;
+  border-left: 1px solid black;
+  padding-left: 2%;
+}
+
+aside h3 {
+  text-align: center;
+  font-size: 15px;
+  text-align: center;
+  padding: 2% 0;
+  font-weight: bold;
+}
+
+aside ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+aside ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+aside ul a {
+  text-decoration: none;
+  width: 20%;
+  color: black;
+}
+
+aside ul a img {
+  max-width: 100%;
+}
+
+aside ul li button {
+  background-color: #7761fd;
+  color: white;
+  border: none;
+  padding: auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+aside ul li p {
+  margin: 0;
+  font-size: 15px;
+}
+
+aside ul li span {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+/* Masquer #SugestionUser lorsque l'écran est inférieur ou égal à 768px */
+@media (max-width: 995px) {
+  #SugestionUser {
+    display: none;
+  }
+}
+
+/* Responsive: cacher les texte du menu lorsque l'écran est petit */
+@media (max-width: 480px) {
+  .Menu li a span,
+  .Menu li span {
+    display: none;
+  }
+  .Menu {
+    border-right: 1px solid rgb(255, 255, 255);
+  }
+
+  .Menu li {
+    justify-content: center;
+  }
+
+  .Menu ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/* Écrans tablettes */
+@media (max-width: 768px) {
+  .Menu {
+    position: static;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+
+  .divListeAside {
+    width: 90%;
+    margin: auto;
+  }
+
+  #SectionPresentation h2 {
+    font-size: 2em;
+  }
+}
+
+.dark-mode {
+  background: #5c5c5c;
+  color: white;
+}
+
+.favoris-actif {
+  color: red !important;
+}
+
+aside ul li img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#popupCondition {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 1000;
+  color: #000;
+}
+
+.displayNone {
+  display: none;
+}
+.displayBlock {
+  display: block;
+}

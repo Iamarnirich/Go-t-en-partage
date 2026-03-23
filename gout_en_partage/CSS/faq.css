@@ -1,0 +1,46 @@
+body {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+main {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 6% 15% 8% 15%;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center; 
+}
+
+.logo img {
+    width: 250px; 
+    margin: 15px;
+    
+
+}
+
+h1{
+    text-align: center;
+    font-size: 45px;
+    font-family: cursive;
+    margin: auto;
+}
+
+.faq {
+    padding: 2% 5%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.faq .item {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.faq p {
+    font-size: 18px;
+    line-height: 1.5;
+}

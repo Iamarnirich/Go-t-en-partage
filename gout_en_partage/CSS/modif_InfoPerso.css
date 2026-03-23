@@ -1,0 +1,270 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+main {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;;
+    padding: 6% 15% 8% 15%;
+    
+}
+
+#profil{
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+
+}
+
+
+header{
+    z-index: 10;
+}
+
+.photo_profil {
+    position: relative;
+    display: inline-block;
+    width: 120px; 
+    height: 120px;
+}
+
+
+#profilePreview {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+
+.btn_changer_pp {
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    border-radius: 50%;
+    font-size: 1.5em; 
+    width: 25%; 
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px; 
+    right: 15px;
+    transform: translate(50%, 50%);
+}
+
+.btn_retirer_pp {
+    background-color: #7761FD;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    bottom: 85px; 
+    left: 200px; 
+}
+
+p > strong{
+    font-family: cursive;
+}
+
+
+p{
+    text-align: center;
+    font-size: 20px;    
+}
+.confidentialite p {
+    font-size: 15px;
+    font-style: italic;
+}
+
+h2{
+    text-align: center; 
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.InfoPerso, .confidentialite, .securite, .action{ 
+    max-width: 600px;
+    margin: 20px auto; 
+    padding: 20px; 
+    background-color:white; 
+    border-radius: 8px;
+    
+    
+}
+
+.infos, .mdp{
+    width: 100%; 
+    padding: 10px; 
+    margin: 20px 0; 
+    border: 1px solid;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+
+.submit {
+    width: 100%; 
+    padding: 10px; 
+    background-color: #7761FD; 
+    color: white; 
+    border: none; 
+    border-radius: 4px;
+    cursor: pointer; 
+    font-size: 16px;  
+}
+.toggle{
+    display: flex;           
+    align-items: center;    
+    justify-content: center; 
+}
+
+.switch {
+	display: inline-block;
+	position: relative;
+	width: 70px;
+	height: 40px;
+	cursor: pointer;
+	overflow: hidden;
+    margin: 20px;
+}
+
+
+.switch input {
+	position: absolute;
+	top: -30px;
+	left: -30px;
+	width: 0;
+	height: 0;
+}
+
+.switch input + span {
+    position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: #7f77b0;
+   border-radius: 20px;
+}
+
+.switch input:checked + span {
+	background: #7761FD;
+}
+
+.switch input + span:before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 4px;
+	width: 32px;
+	height: 32px;
+	background: white;
+	border-radius: 50%;
+	transform: translateY(-50%);
+	transition: all .5s;
+}
+
+.switch input:checked + span:before {
+	left: 34px;
+}
+
+.action a {
+    display: block; 
+    margin: 10px 0; 
+}
+
+.mdp-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.mdp {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    padding-right: 60px; 
+}
+
+.toggles {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #007bff;
+    font-size: 14px;
+}
+
+.validation-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 18px;
+    color: white;
+    margin-right: 10px;
+  }
+  .success {
+    background-color: green;
+  }
+  .error {
+    background-color: lightgray;
+    color: gray;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+ul li {
+  font-size: 12px; 
+  margin-bottom: 5px; 
+}
+.submiit {
+    width: 100%; 
+    padding: 10px; 
+    background-color: gray; 
+    color: white; 
+    border: none; 
+    border-radius: 4px;
+    cursor: not-allowed; 
+    font-size: 16px;  
+}
+.submiit.active{
+    background-color: #7761FD; 
+    cursor: pointer;
+}
+.verif p{
+   text-align: left;
+    font-size: 15px; 
+
+}
+.nav-link img{
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    object-fit: cover;
+    
+}
+.nav-link span {
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+

@@ -1,0 +1,89 @@
+#profil{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+
+}
+
+main{
+    width: 100%;
+}
+
+header{ /*Nécessite de mettre le header à un z-index plus haut que celui de la croix de modification*/
+    z-index: 30;
+}
+
+#profil img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#pseudo_compteHome{
+    font-family: cursive;
+}
+
+
+#onglets {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#onglets * {
+    text-decoration: none;
+    border: none;
+    color: black;
+    font-weight: bold;
+    height: 100%;
+    margin-bottom: 0%;
+}
+
+.edition {
+    border: none;
+}
+
+
+main {
+    padding: 85px 15% 6% 15%; /*le margin top est en valeur px car le header est toujorus de 80px*/
+}
+
+.fav {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 20px;
+}
+
+.fav button {
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#btnPP{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btnPublicationMoi {
+    background-color: black;
+    color: #fff;
+}
+
+#btnPP button {
+    width: 25%;
+    border: none;
+    padding: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    margin-bottom: 15px;
+  }

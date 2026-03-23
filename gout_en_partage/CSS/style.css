@@ -1,0 +1,112 @@
+header {
+  /* position: fixed; */
+  background: linear-gradient(to right, #b8aef6, #abffa4);
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, sans-serif;
+  border-bottom: 5px solid #e0e0e0;
+  /* Ligne de séparation subtile */
+  flex-direction: row;
+}
+
+header nav a {
+  width: 20%;
+}
+
+#logo img {
+  width: 50%;
+  height: auto;
+  margin-left: 0;
+}
+
+/* Barre de recherche responsive pour les tablette*/
+@media (max-width: 768px) {
+  .navbar-nav form {
+    width: 100%;
+    margin-top: 10px;
+  }
+  #logo img {
+    width: 70%;
+  }
+}
+
+/* Barre de recherche responsive pour les smartphones*/
+@media (max-width: 480px) {
+  #logo img {
+    width: 80%;
+  }
+}
+
+.nav-link {
+  width: auto;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+}
+
+.nav-item {
+  padding: auto 20px;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.navbar-nav {
+  width: 100%;
+}
+.container-fluid {
+  width: 100%;
+}
+#navbar {
+  width: 100%;
+}
+
+footer {
+  background-color: #b8aef6;
+  height: 30px;
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  width: auto;
+}
+
+footer span {
+  width: auto;
+}
+
+footer span button {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  padding: auto;
+}
+
+#resultatBR {
+  position: fixed;
+  top: 100px;
+  z-index: 1000;
+  background-color: azure;
+}
+
+#resultatBR img {
+  width: 30%;
+  margin-left: 50px;
+  border-radius: 50%;
+}
+
+#resultatBR a {
+  text-decoration: none;
+  color: black;
+}

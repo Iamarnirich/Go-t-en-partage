@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tastify : Informations</title>
+    <link rel="icon" type="image/png" href="../Image/favicon.png" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="../Image/tastify-removebg-preview.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../CSS/A_propos.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/information.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/Information.css" />
+    <script src="../JS/barRecherche.js" defer></script>
+  </head>
+  <body>
+    <header id="header">
+      <!-- Barre de Navigation -->
+      <nav class="navbar navbar-expand-md" id="navbar">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a id="logo" class="navbar-brand" href="AccueilC.html">
+            <img
+              src="../Image/tastify-removebg-preview.png"
+              alt="logo tastify"
+            />
+          </a>
+
+          <!-- Bouton Hamburger pour les petits écrans -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Menu de navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Contenu du menu -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Accueil -->
+              <li class="nav-item">
+                <a class="nav-link" href="AccueilC.html">
+                  <img
+                    src="../Image/icone_accueil.png"
+                    alt="Accueil"
+                    style="height: 20px"
+                  />
+                  Accueil
+                </a>
+              </li>
+
+              <!-- Barre de recherche -->
+              <li class="nav-item">
+                <form
+                  action="/recherche"
+                  method="GET"
+                  class="d-flex search-form"
+                  onsubmit="return false;"
+                >
+                  <input
+                    type="text"
+                    name="q"
+                    placeholder="Rechercher..."
+                    class="form-control me-2 search-input"
+                  />
+                  <section id="resultatBR"></section>
+                </form>
+              </li>
+
+              <!-- Créer une nouvelle liste -->
+              <li class="nav-item">
+                <a class="nav-link" href="../PHP/creation_liste.php">
+                  <button class="btn btn-primary me-2">
+                    + Créer une nouvelle liste
+                  </button>
+                </a>
+              </li>
+
+              <!-- Profil -->
+              <li class="nav-item">
+                <a class="nav-link" href="compteHome.html">
+                  <i class="fas fa-user"></i> Profil
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="logos">
+        <img src="../Image/tastify-removebg-preview.png" alt="Tastify Logo" />
+        <h1>Tastify : partage tes goûts et découvre ceux des autres!</h1>
+      </div>
+      <ul class="info">
+        <p>
+          Si vous avez des questions ou des commentaires, n'hésitez pas à nous
+          contacter<a href="contact.html"> ici</a>. <br />Nous sommes là pour
+          vous répondre à toutes vos préoccupations concernant l'utilisation de
+          Tastify.
+        </p>
+        <p>
+          Consultez notre section <a href="faq.html">FAQ </a>pour trouver des
+          réponses aux questions les plus fréquentes sur l'application.
+        </p>
+        <p>
+          Trouvez notre
+          <a
+            href="https://www.privacypolicies.com/live/cc9cf99a-22e3-4a35-a6ec-21040f75b305"
+            >politique de confidentialité</a
+          >
+          ici pour comprendre comment nous collectons et utilisons vos données.
+        </p>
+        <p>
+          Certaines fonctionnalités de Tastify utilisent l'API IGDB. Vous pouvez
+          la consulter
+          <a href="https://api-docs.igdb.com/#getting-started">ici</a>.
+        </p>
+      </ul>
+    </main>
+    <footer>
+      <a href="#logos"><strong>↑Plus haut</strong></a>
+      <span id="copyright">Copyright - 2024</span>
+      <span><a href="information.html">Informations </a></span>
+      <span><a href="faq.html">FAQ</a></span>
+      <span><button id="deconnexion">Deconnexion</button> </span>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../JS/Accueil.js"></script>
+  </body>
+</html>
